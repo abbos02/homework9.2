@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    width: 96%;
+    padding: 25px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 400px 70%;
+    grid-template-rows: 80px 500px;
+    background: white;
+    border-radius: 10px;
+    border: 3px solid rgb(239, 111, 211);
+    margin: 25px;
+    box-shadow: 0 0 10px 2px rgb(239, 111, 211);
+    grid-template-areas:     "header header"    "aside article"    ;
+    gap: 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.grid-item-1{
+    grid-area: header;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(239, 111, 211);
+    border: 3px solid rgb(239, 111, 211);
+    background: rgb(252, 252, 251);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.grid-item-1 .list{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.grid-item-1 .list .list_li{
+    padding: 10px;
+    background:rgb(245, 198, 235) ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(239, 111, 211);
+    border: 3px solid rgb(239, 111, 211);
+}
+
+.grid-item-2{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(239, 111, 211);
+    border: 3px solid rgb(239, 111, 211);
+    grid-area: aside;
+    background: rgb(248, 248, 243);
+    display: grid;
+    justify-content: center;
+    
+}
+.grid-item-2 .list2 {
+    margin-top: 20px;
+    margin-left: -70px;
+    display: grid;
+    list-style-type: none;
+}
+.grid-item-2 .list2 .list2_li{
+    padding: 10px;
+    background:rgb(245, 198, 235) ;
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    
+    border: 3px solid rgb(239, 111, 211);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(239, 111, 211);
+
+}
+.grid-item-3{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(239, 111, 211);
+    border: 3px solid rgb(239, 111, 211);
+    grid-area: article;
+    background: rgb(242, 248, 248);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.grid-item-3 .card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(239, 111, 211);
+    border: 3px solid rgb(239, 111, 211);
+    padding-bottom:10px;
+
+}
+.grid-item-3 .card p{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    background:rgb(241, 187, 230) ;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 2px rgb(239, 111, 211);
+    border: 1px solid rgb(239, 111, 211);
+    margin: 10px 0;
+    padding: 10px;
+}
+.grid-item-3 .card h4{
+    background:rgb(245, 198, 235) ;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 2px rgb(239, 111, 211);
+    border: 1px solid rgb(239, 111, 211);
+    padding: 10px;
+    width: 50%;
+}
